@@ -73,6 +73,10 @@ img.inset-left {
 }
 
 @media only screen and (max-width: 600px) {
+	#bookshelf .book .cover {
+		width: 40%;
+	}
+
 	img.inset-right, img.inset-left {
 		float: none;
 		display: block;
