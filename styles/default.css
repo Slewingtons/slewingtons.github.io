@@ -120,7 +120,7 @@ p {
 	padding: 1em;
 }
 
-img { box-shadow: 4px 4px 4px #999; }
+img { box-shadow: 2px 2px 8px #00000080; }
 
 img.avatar { box-shadow: none; }
 
@@ -177,3 +177,28 @@ table tr td { background: #FFF; }
 table tr th { background: #EEE; }
 
 blockquote { border-color: #CCC; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	main {
+		color: #CCC;
+		background: #1C1C1F;
+	}
+	
+	h2 { border-color: #CCC; }
+
+	#bookshelf .book:hover { background: #333; }
+	
+	#bookshelf .book .overview { border-color: #666; }
+	
+	.author, .date, .tags { color: #999; }
+	
+	table, table tr td, table tr th { border-color: #666; }
+	
+	table tr td { background: #1C1C1F; }
+	
+	table tr th { background: #333; }
+	
+	blockquote { border-color: #666; }
+}
