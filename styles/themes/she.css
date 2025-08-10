@@ -1,0 +1,36 @@
+/*
+ * Theme — She
+ */
+
+body { background-color: #001020; }
+
+header h1 {
+	color: #FFF0E0;
+	
+	background: linear-gradient(to bottom, #FFF0E0 25%, #FFF 49%, #FFF0E0 51%, #FFF0E0 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+header h1 em {
+	color: #FF4080;
+	
+	background: linear-gradient(to bottom, #FF4080 25%, #FFF 49%, #FF4080 51%, #FF4080 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+	
+	font-family: inherit;
+}
+
+nav, footer {
+	background: #FF4080;
+	color: #FFF;
+}
+
+nav { border-top: 1px solid #FFF; }
+
+footer { border-bottom: 1px solid #FFF; }
+
+nav a, footer a { color: #001020; }
+
+a { color: #FF4080; }

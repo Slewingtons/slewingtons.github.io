@@ -1,0 +1,160 @@
+/*
+ * Diary
+ */
+
+.diary {
+	margin: auto;
+	width: 80%;
+}
+
+/* Entries */
+
+.entry, .sending, .mirror, .strangerentry {
+	position: relative;
+	overflow: auto;
+	margin: 2px 0;
+	padding: 0 1em;
+	border-left: 4px solid Sienna;
+	border-radius: 4px;
+	background-color: OldLace;
+}
+
+.entry:hover, .strangerentry:hover {
+	background-color: AntiqueWhite;
+}
+
+/* Replies */
+
+.reply, .strangerreply {
+	position: relative;
+	overflow: auto;
+	margin: 2px 0;
+	padding: 0 1em;
+	background-color: OldLace;
+}
+
+.thread {
+	position: relative;
+	margin: 2px 0;
+	margin-left: 2rem;
+	border-left: 4px solid Sienna;
+	border-radius: 4px;
+}
+
+.subthread {
+	position: relative;
+	margin: 2px 0;
+	margin-left: 2px;
+	border-left: 4px solid Sienna;
+	border-radius: 4px;
+}
+
+.strangerreply  p {
+	font-style: italic;
+	font-size: small;
+	color: Sienna;
+}
+
+.reply:hover, .strangerreply:hover {
+	background-color: AntiqueWhite;
+}
+
+/* Alternative Styles */
+
+.sending {
+	border-left: 4px solid DarkViolet;
+	text-align: center;
+	font-style: italic;
+	background-color: lavenderblush;
+}
+
+.mirror {
+	border-left: 4px solid SlateGray;
+	text-align: center;
+	font-variant: small-caps;
+	color: DarkSlateGray;
+	background-color: AliceBlue;
+}
+
+.sending p:before {
+	content: open-quote;
+}
+
+.sending p:after {
+	content: close-quote;
+}
+
+.altspeaker {
+	/* Nothing as yet */
+}
+
+div[title]:before {
+	position: absolute;
+	content: '';
+	background: url("../img/tooltipdot_sml.gif");
+	width: 6px;
+	height: 6px;
+	top: 2px;
+	right: 2px;
+	z-index: 1;
+}
+
+/* Metadata Panels */
+
+.date {
+	text-align: right;
+}
+
+.engage {
+	float: left;
+	text-align: left;
+}
+
+.date p, .engage p {
+	margin-top: 0;
+	display: inline-block;
+}
+
+/* Alternative Font Styles */
+
+.inreplyto p, .strangerreply  p, .date p, .engage p, .strangerentry p {
+	font-style: italic;
+	font-size: small;
+	color: Sienna;
+}
+
+/*
+ * Poll
+ */
+
+.poll {
+	/* ... */
+}
+
+.option {
+	padding: 0 1em;
+}
+
+.bar {
+	height: 2em;
+	min-width: 8px;
+	margin-top: -1.5em;
+	margin-bottom: 1em;
+	border-radius: 4px;
+	background-color: SandyBrown;
+}
+
+.result {
+	float:right;
+	text-align: right;
+}
+
+/*
+ * Media
+ */
+
+.entry img, .reply img {
+	max-width: 100%;
+	margin-bottom: 1em;
+	border-radius: 16px;
+}

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+		<title>Sulkie’s Home</title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Sulkie’s Home</h1>
+			<hr />
+		</div>
+		<div id="content">
+			<h2>Hello my name is Sulkie.</h2>
+			<p class="overview">I live in a city by the sea with my cat <strong>Breadstick</strong> and my special friend <strong>Nene.</strong><br />I’m a delivery girl and I’m <span id="age">XX</span> years old.</p>
+			<ul class="menu">
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="diary.html">My Diary</a></li>
+				<li><a href="friends.html">Friends</a></li>
+				<li><a href="job.html">Job</a></li>
+			</ul>
+		</div>
+		<div id="footer">
+			<hr />
+			<p>Created by Sulkie, 1499 DR</p>
+		</div>
+		<script type="text/javascript">
+			// a and b are Date objects
+			function dateDiffInYears(a, b) {
+				const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
+				// Discard the time and time-zone information.
+				const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+				const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+				return Math.floor((utc2 - utc1) / _MS_PER_YEAR);
+			}
+
+			// Sulkie’s birthday (in our time)
+			const a = new Date("2002-07-29"),
+			b = new Date(),
+			age = dateDiffInYears(a, b);
+
+			document.getElementById("age").innerHTML = age;
+		</script>
+	</body>
+</html>

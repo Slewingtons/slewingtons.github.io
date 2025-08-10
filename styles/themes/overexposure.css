@@ -1,0 +1,26 @@
+/*
+ * Theme — Overexposure
+ */
+
+body { background-color: #802010; }
+
+header h1 {
+	color: #FFDC80;
+	
+	background: linear-gradient(to bottom, #FFDC80 25%, #FFF 49%, #FFDC80 51%, #FFDC80 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+nav, footer {
+	background: #202030;
+	color: #FFF;
+}
+
+nav { border-top: 1px solid #FFDC80; }
+
+footer { border-bottom: 1px solid #FFDC80; }
+
+nav a, footer a { color: #FFDC80; }
+
+a { color: #802010; }

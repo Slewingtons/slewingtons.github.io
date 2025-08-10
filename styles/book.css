@@ -1,0 +1,57 @@
+html {
+	background: #FFF;
+	color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background: #1C1C1E;
+		color: #F2F2F0;
+	}
+}
+
+main {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+h1, h2, h3, #dedication {
+	text-align: center;
+}
+
+p.dinkus {
+	text-align: center;
+	margin: 1em 0;
+}
+
+p, address {
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: 1em;
+	margin: 0em;
+}
+
+#dedication {
+	text-indent: 0em;
+}
+
+blockquote {
+	line-height: 1.25em;
+	font-style: italic;
+	margin: 1em 2.5em;
+}
+
+address {
+	text-align: right;
+	margin: 0 2.5em;
+}
+
+em.beginning {
+	font-style: normal;
+	font-variant: small-caps;
+}

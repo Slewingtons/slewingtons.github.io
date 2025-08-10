@@ -1,0 +1,175 @@
+/*
+ * Page Structure
+ */
+
+body { margin: 0; }
+
+.content-wrapper {
+	max-width: 40em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav { padding: 0.5em 0; }
+
+main { padding: 1em 0; }
+
+footer {
+	padding: 0.5em 0;
+	margin: 0 0 2em 0;
+}
+
+/*
+ * Content Structure
+ */
+
+header .content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h2 {
+	clear: both;
+}
+
+#bookshelf {
+	display: flex;
+	flex-direction: column;
+}
+
+#bookshelf .book {
+	display: flex;
+	flex-direction: row;
+	margin: 0.5em 0;
+}
+
+#bookshelf .book .cover {
+	flex: none;
+	width: 30%;
+	text-align: center;
+	position: relative;
+}
+
+#bookshelf .book .cover img {
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.inset-right {
+	clear: both;
+	float: right;
+	margin: 0 0 1em 2em;
+}
+
+img.inset-left {
+	clear: both;
+	float: left;
+	margin: 0 2em 1em 0;
+}
+
+@media only screen and (max-width: 600px) {
+	img.inset-right, img.inset-left {
+		float: none;
+		display: block;
+		margin: 0 auto 1em auto;
+	}
+}
+
+table { width: 100%; }
+
+/*
+ * Content Style
+ */
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-family: "Lobster Two", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 300%;
+}
+
+h1 strong {
+	font-style: normal;
+}
+
+h2 { border-bottom: 1px solid; }
+
+h3 { margin: 0; }
+
+p {
+	line-height: 1.25em;
+}
+
+#bookshelf .book { border-radius: 0.5em; }
+
+#bookshelf .book .overview {
+	border-left: 2px solid;
+	padding: 1em;
+}
+
+img { box-shadow: 4px 4px 4px #999; }
+
+img.avatar { box-shadow: none; }
+
+.author, .date, .tags { font-size: 80%; }
+
+.date { margin-left: 0.5em; }
+
+table, table tr td, table tr th {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 0.5em;
+}
+
+table tr th {
+	text-align: left;
+}
+
+blockquote {
+	border-left: 2px solid;
+	padding-left: 1em;
+	font-style: italic;
+	font-size: 120%;
+}
+
+p.centerquote {
+	text-align: center;
+	font-style: italic;
+	font-size: 120%;
+}
+
+footer { text-align: center; }
+
+/*
+ * Content Colours
+ */
+
+main {
+	color: #333;
+	background: #FFF;
+}
+
+h2 { border-color: #333; }
+
+#bookshelf .book:hover { background: #EEE; }
+
+#bookshelf .book .overview { border-color: #CCC; }
+
+.author, .date, .tags { color: #666; }
+
+table, table tr td, table tr th { border-color: #CCC; }
+
+table tr td { background: #FFF; }
+
+table tr th { background: #EEE; }
+
+blockquote { border-color: #CCC; }

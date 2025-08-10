@@ -1,0 +1,26 @@
+/*
+ * Theme — Hair Blush
+ */
+
+body { background-color: #F0E0D0; }
+
+header h1 {
+	color: #706050;
+	
+	background: linear-gradient(to bottom, #8C7864 0%, #706050 50%, #54483C 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+nav, footer {
+	background: #70605080;
+	color: #F0E0D0;
+}
+
+nav { border-top: 1px solid #706050; }
+
+footer { border-bottom: 1px solid #706050; }
+
+nav a, footer a { color: #706050; }
+
+a { color: #802040; }
