@@ -24,3 +24,24 @@ footer { border-bottom: 1px solid #706050; }
 nav a, footer a { color: #706050; }
 
 a { color: #802040; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	body { background-color: #706050; }
+	
+	header h1 { color: #F0E0D0; }
+	
+	nav, footer {
+		background: #F0E0D0;
+		color: #706050;
+	}
+	
+	nav { border-top: 1px solid #F0E0D0; }
+
+	footer { border-bottom: 1px solid #F0E0D0; }
+	
+	nav a, footer a { color: #802040; }
+
+	a { color: #C06080; }
+}

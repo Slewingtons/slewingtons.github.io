@@ -3,13 +3,6 @@ html {
 	color: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		background: #1C1C1E;
-		color: #F2F2F0;
-	}
-}
-
 main {
 	max-width: 40em;
 	margin: 0 auto;
@@ -54,4 +47,13 @@ address {
 em.beginning {
 	font-style: normal;
 	font-variant: small-caps;
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background: #1C1C1E;
+		color: #F2F2F0;
+	}
 }

@@ -34,3 +34,14 @@ footer { border-bottom: 1px solid #FFF; }
 nav a, footer a { color: #001020; }
 
 a { color: #FF4080; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	nav, footer {
+		background: #001020;
+		color: #FFF0E0;
+	}
+	
+	nav a, footer a { color: #FF4080; }
+}

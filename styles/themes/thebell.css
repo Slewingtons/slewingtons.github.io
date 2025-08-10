@@ -24,3 +24,9 @@ footer { border-bottom: 1px solid #FFDC80; }
 nav a, footer a { color: #FFDC80; }
 
 a { color: #C04020; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	a { color: #FFDC80; }
+}
