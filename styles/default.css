@@ -39,25 +39,23 @@ h2 {
 }
 
 #bookshelf .book {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 3fr 7fr;
 	margin: 0.5em 0;
 }
 
-#bookshelf .book .cover {
-	flex: none;
-	width: 30%;
-	text-align: center;
-	position: relative;
-}
+/* Flex box alternative
+#bookshelf .book {
+	display: flex;
+	flex-direction: row;
+	margin: 0.5em 0;
+}*/
 
-#bookshelf .book .cover img {
-	max-height: 100%;
-	max-width: 100%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#bookshelf .book .cover {
+	display: flex;
+	min-width: 30%;
+	align-items: center;
+	justify-content: center;
 }
 
 img.inset-right {
@@ -70,18 +68,6 @@ img.inset-left {
 	clear: both;
 	float: left;
 	margin: 0 2em 1em 0;
-}
-
-@media only screen and (max-width: 600px) {
-	#bookshelf .book .cover {
-		width: 40%;
-	}
-
-	img.inset-right, img.inset-left {
-		float: none;
-		display: block;
-		margin: 0 auto 1em auto;
-	}
 }
 
 table { width: 100%; }
@@ -154,6 +140,46 @@ p.centerquote {
 footer { text-align: center; }
 
 /*
+ * Responsive Design
+ */
+ 
+@media only screen and (max-width: 600px) {
+	/* Layout */
+	
+	#bookshelf .book {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0.5em 0;
+	}
+	
+	#bookshelf .book .cover {
+		padding: 1em 0 0 0;
+	}
+
+	/* Flex box alternative
+	#bookshelf .book .cover {
+		min-width: 40%;
+	}*/
+
+	img.inset-right, img.inset-left {
+		float: none;
+		display: block;
+		margin: 0 auto 1em auto;
+	}
+	
+	/* Style */
+	
+	#bookshelf .book {
+		border: solid 1px #CCC;
+	}
+	
+	#bookshelf .book .overview {
+		border-left: none;
+		padding: 1em;
+	}
+}
+
+/*
  * Content Colours
  */
 
@@ -201,4 +227,10 @@ blockquote { border-color: #CCC; }
 	table tr th { background: #333; }
 	
 	blockquote { border-color: #666; }
+	
+	@media only screen and (max-width: 600px) {
+		#bookshelf .book {
+			border: solid 1px #666;
+		}
+	}
 }
