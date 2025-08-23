@@ -1,2 +1,6 @@
 ﻿User-agent: *
-Disallow: /
+Disallow: /stories/*/read
+Disallow: /stories/*/download
+Disallow: /stories/*/img
+Allow: /stories/sulkieb/index.html
+Disallow: /stories/sulkieb/
