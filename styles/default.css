@@ -204,7 +204,7 @@ footer { text-align: center; }
 	background: #00000080;
 }
 
-#cw span {
+#cw div {
 	max-width: 60%;
 	padding: 1.5em;
 	text-align: center;
@@ -215,6 +215,17 @@ footer { text-align: center; }
 	background: #000;
 	color: #FFF;
 	cursor: auto;
+}
+
+#cw.fallback {
+	position: static;
+	visibility: visible;
+	background: none;
+}
+
+#cw.fallback div {
+	max-width: 100%;
+	width: 100%;
 }
 
 /*

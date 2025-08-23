@@ -9,6 +9,7 @@ if (cw !== null) {
 	// Do not show the content warning if the URL hash is #cw.
 	if (window.location.hash !== "#cw") {
 		cw.style.visibility = "visible";
+		cw.classList.remove("fallback");
 	}
 }
 
