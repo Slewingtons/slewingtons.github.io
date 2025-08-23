@@ -200,12 +200,8 @@ footer { text-align: center; }
 	align-items: center;
 	justify-content: center;
 	cursor: default;
-	visibility: visible;
+	visibility: hidden;
 	background: #00000080;
-	
-	&:target {
-		visibility: hidden;
-	}
 }
 
 #cw span {
@@ -218,6 +214,7 @@ footer { text-align: center; }
 	box-shadow: 2px 2px 8px #00000080;
 	background: #000;
 	color: #FFF;
+	cursor: auto;
 }
 
 /*
