@@ -1,16 +1,20 @@
 // Attempt to initialise the content warning.
 var cw = document.getElementById("cw");
 
-// Show content warning if it exists.
+// Set content warning visibility if it exists.
 if (cw !== null) {
 	// Allow the user to click through the content warning.
 	cw.addEventListener("click", hideCW);
 	
-	// Do not show the content warning if the URL hash is #cw.
+	// Only show the content warning if the URL hash is not #cw.
 	if (window.location.hash !== "#cw") {
 		cw.style.visibility = "visible";
-		cw.classList.remove("fallback");
+	} else {
+		cw.style.visibility = "hidden";
 	}
+	
+	// Remove the no-JS fallback.
+	cw.classList.remove("fallback");
 }
 
 // Hide the content warning.
