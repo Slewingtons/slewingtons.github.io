@@ -58,6 +58,53 @@ h2 {
 	justify-content: center;
 }
 
+#carousel {
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+	padding: 0.5em 0 1em 0;
+	align-items: center;
+}
+
+#carousel img {
+	margin: 0 0.5em;
+	max-height: 8em;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: dense;
+	gap: 0.5em;
+}
+
+.gallery .art {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery .art img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: top;
+}
+
+.gallery .art.four-grid-cells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+}
+
+.gallery .art.wide-image {
+    grid-column: span 2 / auto;
+}
+
+.gallery .art.tall-image {
+    grid-row: span 2 / auto;
+}
+
 img.inset-right {
 	clear: both;
 	float: right;
@@ -95,9 +142,9 @@ h2 { border-bottom: 1px solid; }
 
 h3 { margin: 0; }
 
-p {
-	line-height: 1.25em;
-}
+p { line-height: 1.25em; }
+
+#carousel { border-radius: 0.5em; }
 
 #bookshelf .book { border-radius: 0.5em; }
 
@@ -106,9 +153,9 @@ p {
 	padding: 1em;
 }
 
-img { box-shadow: 2px 2px 8px #00000080; }
+img, .gallery .art { box-shadow: 2px 2px 8px #00000080; }
 
-img.avatar { box-shadow: none; }
+img.avatar, .gallery .art img { box-shadow: none; }
 
 .new {
 	border-radius: 0.5em;
@@ -167,7 +214,25 @@ footer { text-align: center; }
 	#bookshelf .book .cover {
 		min-width: 40%;
 	}*/
-
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	
+	.gallery .art.four-grid-cells {
+		grid-row: auto;
+		grid-column: auto;
+	}
+	
+	.gallery .art.wide-image {
+		grid-column: auto;
+	}
+	
+	.gallery .art.tall-image {
+		grid-row: auto;
+	}
+	
 	img.inset-right, img.inset-left {
 		float: none;
 		display: block;
@@ -242,6 +307,15 @@ h2 { border-color: #333; }
 #bookshelf .book:hover { background: #EEE; }
 
 #bookshelf .book .overview { border-color: #CCC; }
+
+#carousel a img, .gallery .art img { transition: transform 0.25s ease; }
+
+#carousel a:hover img, .gallery .art:hover img { transform: scale(1.025); }
+
+.gallery .art.trans {
+	background-image: repeating-conic-gradient(#CCC 0 25%, #FFF 0 50%);
+	background-size: 20px 20px;
+}
 
 .new {
 	color: #000;
