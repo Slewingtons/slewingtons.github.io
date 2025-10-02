@@ -267,6 +267,7 @@ footer { text-align: center; }
 	cursor: default;
 	visibility: hidden;
 	background: #00000080;
+	backdrop-filter: blur(8px);
 }
 
 #cw div {
