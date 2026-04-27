@@ -157,9 +157,9 @@ img, .gallery .art { box-shadow: 2px 2px 8px #00000080; }
 
 img.avatar, .gallery .art img { box-shadow: none; }
 
-.new {
+.new, .mature, .explicit {
 	border-radius: 0.5em;
-	margin: 0 0.5em;
+	margin: 0 0 0 0.5em;
 	padding: 0 0.5em;
 	font-size: 60%;
 }
@@ -319,8 +319,18 @@ h2 { border-color: #333; }
 }
 
 .new {
+	color: #FFF;
+	background: #00A000;
+}
+
+.mature {
 	color: #000;
 	background: #FFC800;
+}
+
+.explicit {
+	color: #FFF;
+	background: #FF0000;
 }
 
 .author, .date, .tags { color: #666; }
@@ -348,8 +358,18 @@ blockquote { border-color: #CCC; }
 	#bookshelf .book .overview { border-color: #666; }
 	
 	.new {
+		color: #FFF;
+		background: #00A000;
+	}
+	
+	.mature {
 		color: #000;
 		background: #FFC800;
+	}
+	
+	.explicit {
+		color: #FFF;
+		background: #FF0000;
 	}
 	
 	.author, .date, .tags { color: #999; }

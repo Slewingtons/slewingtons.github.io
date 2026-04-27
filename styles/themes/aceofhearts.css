@@ -1,0 +1,36 @@
+/*
+ * Theme — Ace of Hearts
+ */
+
+body { background-color: #000000; }
+
+header h1 {
+	color: #FFDC80;
+	
+	background: linear-gradient(to bottom, #FFDC80 25%, #FFF 49%, #FFDC80 51%, #FFDC80 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+nav, footer {
+	background: #800080;
+	color: #FFF;
+}
+
+nav { border-top: 1px solid #FFFFFF; }
+
+footer { border-bottom: 1px solid #FFFFFF; }
+
+nav a, footer a { color: #A0A0A0; }
+
+a { color: #800080; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	body { background-color: #000000; }
+	
+	nav, footer { background: #800080; }
+
+	a { color: #E080E0; }
+}
