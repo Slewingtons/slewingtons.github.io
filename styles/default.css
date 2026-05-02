@@ -144,6 +144,13 @@ h3 { margin: 0; }
 
 p { line-height: 1.25em; }
 
+#country {
+	border: 1px solid;
+	padding: 1em;
+	border-radius: 0.5em;
+	font-style: italic;
+}
+
 #carousel { border-radius: 0.5em; }
 
 #bookshelf .book { border-radius: 0.5em; }
@@ -179,6 +186,7 @@ table tr th {
 }
 
 blockquote {
+	margin-left: 1em;
 	border-left: 2px solid;
 	padding-left: 1em;
 	font-style: italic;
@@ -305,6 +313,8 @@ main {
 
 h2 { border-color: #333; }
 
+#country { background: #EEE; }
+
 #bookshelf .book:hover { background: #EEE; }
 
 #bookshelf .book .overview { border-color: #CCC; }
@@ -352,6 +362,8 @@ blockquote { border-color: #CCC; }
 	}
 	
 	h2 { border-color: #CCC; }
+	
+	#country { background: #333; }
 
 	#bookshelf .book:hover { background: #333; }
 	
