@@ -5,11 +5,21 @@
 body { background-color: #000000; }
 
 header h1 {
-	color: #FFDC80;
+	color: #FFF0E0;
 	
-	background: linear-gradient(to bottom, #FFDC80 25%, #FFF 49%, #FFDC80 51%, #FFDC80 75%, #FFF 100%);
+	background: linear-gradient(to bottom, #FFF0E0 25%, #FFF 49%, #FFF0E0 51%, #FFF0E0 75%, #FFF 100%);
 	background-clip: text;
 	color: transparent;
+}
+
+header h1 em {
+	color: #A0A0A0;
+	
+	background: linear-gradient(to bottom, #A0A0A0 25%, #FFF 49%, #A0A0A0 51%, #A0A0A0 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+	
+	font-family: inherit;
 }
 
 nav, footer {
