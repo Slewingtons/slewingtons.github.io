@@ -1,0 +1,46 @@
+/*
+ * Theme — Da Capo
+ */
+
+body { background-color: #304060; }
+
+header h1 {
+	color: #FFF0E0;
+	
+	background: linear-gradient(to bottom, #FFF0E0 25%, #FFF 49%, #FFF0E0 51%, #FFF0E0 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+header h1 em {
+	color: #A0A0A0;
+	
+	background: linear-gradient(to bottom, #2060A0 25%, #FFF 49%, #E080A0 51%, #E080A0 75%, #FFF 100%);
+	background-clip: text;
+	color: transparent;
+	
+	font-family: inherit;
+}
+
+nav, footer {
+	background: linear-gradient(to right, #2060A0 0%, #E080A0 100%);
+	color: #FFF;
+}
+
+nav { border-top: 1px solid #FFFFFF; }
+
+footer { border-bottom: 1px solid #FFFFFF; }
+
+nav a, footer a { color: #FFF; }
+
+a { color: #2060A0; }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	body { background-color: #102030; }
+	
+	nav, footer { background: linear-gradient(to right, #2060A0 0%, #E080A0 100%); }
+
+	a { color: #E080A0; }
+}
