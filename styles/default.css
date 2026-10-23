@@ -29,6 +29,13 @@ header .content-wrapper {
 	align-items: center;
 }
 
+.donate {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	flex-direction: row-reverse;
+}
+
 h2 {
 	clear: both;
 }
